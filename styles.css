@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+}
+
+/* Assigning different background colors to each card */
+.card:nth-child(1) {
+    background-color: #e3ea54; /* Green */
+}
+
+.card:nth-child(2) {
+    background-color: #cf50d3; /* Blue */
+}
+
+.card:nth-child(3) {
+    background-color: #FF5722; /* Orange */
+}
+
+.card:nth-child(4) {
+    background-color: #1b6e06; /* Purple */
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card-container:hover .card:not(:hover) {
+    opacity: 0.3;
+}
+
+h1{
+    text-align: center;
+    color: #cf50d3;
+    margin: 50px;
+}
